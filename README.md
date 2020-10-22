@@ -1,4 +1,4 @@
-# Harman-test
+# Harman Code Test
 
 Navigate to the src/index.html file to see the solution for all the problems.Navigation links are provided for the 3 assignments
 - Signup Form
