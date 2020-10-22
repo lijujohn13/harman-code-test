@@ -1,0 +1,121 @@
+/*** Signup Form ***/
+
+#hct-su {
+    padding: 24px;
+    box-shadow: 0 0 5px lightgrey;
+    background-color: #bdbab7;
+}
+
+.hct-su-form {
+    border-radius: 5px;
+    background-color: #24323d;
+    padding: 24px;
+}
+
+.hct-su-tab {
+    background-color: #43525a;
+    color: #a0b39a;
+    min-height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.hct-su-tab.active {
+    background-color: #1ab189;
+    color: white;
+}
+
+.hct-su-title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.hct-su-inputs {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1.5em;
+}
+
+.hct-su-input-wrapper {
+    outline: 2px solid  #802d3e;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hct-su-input {
+   background: inherit;
+   min-height: 30px;
+   width: -moz-available;
+   width: -webkit-fill-available;
+   border: 1px solid lightgrey;
+   padding: 2px;
+   color: white;
+}
+
+.hct-su-input:focus {
+    border: transparent;
+    outline: none;
+ }
+
+.hct-su-input-wrapper > input::placeholder {
+    content: '*';
+    font-weight: 500;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.hct-su-input-wrapper > input::-moz-placeholder {
+    content: '*';
+    font-weight: 500;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+#firstname-wrapper {
+    grid-column: 1 / 4;
+}
+
+#lastname-wrapper {
+    grid-column: 8 / 12;
+}
+
+.hct-su-input-wrapper.span-12 {
+    grid-column: 1 / 12;
+}
+
+.hct-su-inputs #firstname-wrapper:after {
+    position: absolute;
+    right: 5%;
+    top: 6px;
+    color: #62666a;
+    content: "\f2b9";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.hct-su-inputs #password-wrapper:after {
+    position: absolute;
+    right: 5%;
+    content: "\f023";
+    top: 6px;
+    color: #62666a;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.hct-su-get-started {
+    background-color: #1ab189;
+    color: white;
+    min-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 24px;
+    border: none;
+}
+
+/*** ----------------------- ***/

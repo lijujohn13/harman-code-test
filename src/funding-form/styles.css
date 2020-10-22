@@ -1,0 +1,136 @@
+/*** Fund Donation Form ***/
+#hct-fd {
+    padding: 24px;
+    box-shadow: 0 0 5px lightgrey;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.hct-fd-title {
+    background-color: #424242;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    position: relative;
+}
+
+.hct-fd-title::after {
+    position: absolute;
+    content: '';
+    border-top: solid 8px #424242;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+    top: 100%;
+    right: 10%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+}
+
+.hct-fd-content {
+    border: 1px solid #dcdcdc;
+}
+
+.hct-fd-content .hct-fd-days-progress {
+    border-bottom: 1px solid #dcdcdc;
+    height: 1em;
+    background-color: #fafafa;
+}
+
+.hct-fd-days-progress > span {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #ef603c;
+    height: 100%;
+}
+
+.hct-fd-form-content {
+    padding: 24px;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 3px 0 0 #d3d3d35e;
+}
+
+.hct-fd-donate {
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-gap: 1.5em;
+}
+
+.hct-fd-donor-count {
+    font-weight: 600;
+    color: #828282;
+}
+
+.hct-fd-input-with-dollar {
+    position: relative;
+}
+
+.hct-fd-dollar-input {
+    height: 55px;
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: bolder;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+.hct-fd-dollar-input:focus {
+    border: 1px solid #dcdcdc;
+}
+
+.hct-fd-input-with-dollar:before {
+    color: #828282;
+    content: "$";
+    font-size: 22px;
+    font-weight: bolder;
+    position: absolute;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10px;
+}
+
+.hct-fd-donate-button {
+    min-height: 55px;
+    background-color: #1cbc2c;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.hct-fd-why-donate {
+    color: #28a4d5;
+    font-style: italic;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hct-fd-action {
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-column-gap: 1.78em;
+}
+
+.hct-fd-action-button {
+    min-height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 100%;
+    color: #777777;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*** ----------------------- ***/

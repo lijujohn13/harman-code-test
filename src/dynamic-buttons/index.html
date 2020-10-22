@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Buttons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header  id="hct-header" class="hct-header">
+            <nav class="hct-nav">
+                <ul>
+                    <li class="hct-nav-item"><a href="../index.html">Home</a></li>
+                    <li class="hct-nav-item"><a href="../signup-form/index.html">Signup</a></li>
+                    <li class="hct-nav-item"><a href="../funding-form/index.html">Funding</a></li>
+                    <li class="hct-nav-item active"><a href="./index.html">Dynamic Buttons</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="hct-content" id="hct-oops-container">
+            <h3>Create Buttons</h3>
+            <input id="btn-count" type="number" onchange="validateInput(this)" placeholder="Enter button count" />
+            <button onClick="handleButtonCreation();">Create</button>
+            <div id="btn-container"></div>
+        </main>
+        <script type="text/javascript" src="./runtime.js"></script>
+        <script type="text/javascript" src="./index.js"></script>
+        <script type="text/javascript" src="../../test/index.js"></script>
+        <script type="text/javascript" src="../../test/tests/dynamic-button-test.js"></script>
+    </body>
+</html>

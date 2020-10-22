@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*** Common Styles ***/
+.hct-bold-text {
+    font-weight: bold;
+}
+
+.hct-padding-tb-16 {
+    padding: 16px 0px;
+}
+
+.hct-padding-b-16 {
+    padding-bottom: 16px;
+}
+
+.hct-margin-b-16 {
+    margin-bottom: 16px;
+}
+
+.hct-text-fadedblack {
+    color: #424242;
+}
+
+.hct-text-orange {
+    color: #ef603c;
+}
+
+.hct-text-align-middle {
+    vertical-align: middle;
+}
+
+.hct-text-align-center {
+    text-align: center;
+}
+
+.hct-flex {
+    display: flex;
+}
+
+.hct-flex.space-between {
+    justify-content: space-between;
+}
+
+.hct-header {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 18px;
+}
+
+.hct-content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.hct-nav {
+    width: 100%;
+    background: cadetblue;
+}
+
+.hct-nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.hct-nav-item {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hct-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hct-nav-item.active, .hct-nav-item:hover {
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.hct-input-error {
+    border-color: red;
+    border-width: 1px;
+}
+
+/*** ----------------------- ***/
