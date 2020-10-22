@@ -2,17 +2,17 @@
 
 global.app.test('createButtons function should return error message when count is passed as null or falsy value', function () {
    const err = global.app.createButtons(null);
-   assert(err === 'Count has to be specified');
+   global.app.assert(err === 'Count has to be specified');
 });
 
 global.app.test('createButtons function should return error message when a non integer is passed as count', function () {
     const err = global.app.createButtons('5');
-    assert(err === 'Count should be a number');
+    global.app.assert(err === 'Count should be a number');
 });
 
 global.app.test('createButtons function should return error message when negative count is passed', function () {
     const err = global.app.createButtons(-2);
-    assert(err === 'Count should be a positive number');
+    global.app.assert(err === 'Count should be a positive number');
 });
 
 global.app.test('createButtons when called should add 5 buttons to the document', function () {
